@@ -1,4 +1,4 @@
-
+import streamlit as st
 import random
 cesped="V"
 cesped_cortado="."
@@ -19,9 +19,9 @@ def mapa_nuevo():
 mapa_nuevo()
 def mapea():
   for linea in mapa:
-    print()
+    st.write()
     for y in linea:
-      print(y, end=" ")
+      st.write(y, end=" ")
 
 # colocar al jardinero y al jabali, necesito las coordenadas del jardinero
 
@@ -63,13 +63,13 @@ def movimiento():
     mapa[posicion[1]][posicion[0]]=jardinero
     if  jabali_posicion==posicion:
       clear_output()
-      print("pillaste al jabali")
+      st.write("pillaste al jabali")
       mapea()
       break
     jabali_mueve()
     if  jabali_posicion==posicion:
       clear_output()
-      print("el jabali te pilla")
+      st.write("el jabali te pilla")
       mapea()
       break
     clear_output()
