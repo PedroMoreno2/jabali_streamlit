@@ -20,7 +20,7 @@ def mapa_nuevo():
 mapa_nuevo()
 def mapea():
   for linea in mapa:
-    st.write(linea)
+    st.text(linea)
 
 # colocar al jardinero y al jabali, necesito las coordenadas del jardinero
 
