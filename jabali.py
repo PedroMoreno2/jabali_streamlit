@@ -1,4 +1,4 @@
-
+import os
 import streamlit as st
 import random
 cesped="V"
@@ -63,17 +63,17 @@ def movimiento():
       posicion[1]-=1   
     mapa[posicion[1]][posicion[0]]=jardinero
     if  jabali_posicion==posicion:
-      clear_output()
+      os.system("cls")
       st.write("pillaste al jabali")
       mapea()
       break
     jabali_mueve()
     if  jabali_posicion==posicion:
-      clear_output()
+      os.system("cls")
       st.write("el jabali te pilla")
       mapea()
       break
-    clear_output()
+    os.system("cls")
     mapea()
 mapea()
 movimiento()
