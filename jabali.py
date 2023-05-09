@@ -20,7 +20,6 @@ def mapa_nuevo():
 mapa_nuevo()
 def mapea():
   for linea in mapa:
-    st.write()
     for y in linea:
       st.write(y, end=" ")
 
