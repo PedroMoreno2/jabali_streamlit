@@ -49,7 +49,7 @@ def jabali_mueve():
 def movimiento():
   mueve=0
   while mueve!="q":
-    mueve=input("mueve:")
+    mueve=st.text_input("mueve:")
     mapa[posicion[1]][posicion[0]]=cesped_cortado
     mapa[jabali_posicion[1]][jabali_posicion[0]]=cesped_cortado
     if mueve=="4":
